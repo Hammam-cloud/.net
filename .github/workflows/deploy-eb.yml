@@ -42,14 +42,13 @@ jobs:
       - name: Check deploy.zip contents
         run: unzip -l deploy.zip
 
-      # 8️⃣ Deploy to Elastic Beanstalk
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v20
         with:
-         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           region: eu-north-1
-          application_name: "student service"     # Must match your EB app name exactly
-          environment_name: "studentservice-env" # Must match your EB environment exactly
+          application_name: "student-service"     # Must match your EB app name exactly
+          environment_name: "studentservice-env"  # Must match your EB environment exactly
           version_label: ${{ github.sha }}
           deployment_package: deploy.zip
