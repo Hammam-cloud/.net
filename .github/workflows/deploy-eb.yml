@@ -1,4 +1,4 @@
-git add .github/workflows/deploy-eb.ymlname: Build and Deploy to Elastic Beanstalk
+name: Build and Deploy to Elastic Beanstalk
 
 on:
   push:
