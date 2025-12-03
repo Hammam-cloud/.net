@@ -1,0 +1,43 @@
+git add .github/workflows/deploy-eb.ymlname: Build and Deploy to Elastic Beanstalk
+
+on:
+  push:
+    branches:
+      - main   # or your default branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '9.0'  # or the .NET version you use
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build -c Release
+
+      - name: Publish
+        run: dotnet publish -c Release -o publish/
+
+      - name: Zip for EB
+        run: |
+          cd publish
+          zip -r ../deploy.zip .
+
+      - name: Deploy to Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v20
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          region: eu-north-1         # your AWS region
+          application_name: student service   # match your EB app name
+          environment_name: studentservice-env
+          version_label: ${{ github.sha }}
+          deployment_package: deploy.zip
