@@ -1,0 +1,62 @@
+@page
+@model MyRazorApp.Pages.Students.StudentsModel
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h2>Students</h2>
+
+<!-- Add Student Button -->
+<a asp-page="/Students/AddStudent">
+    <button>Add Student</button>
+</a>
+<div class="table-container">
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Gender</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <td>@student.FirstName</td>
+                <td>@student.LastName</td>
+                <td>@student.Email</td>
+                <td>@student.Address</td>
+                <td>@student.Gender</td>
+                <td>
+                    <a asp-page="/Students/EditStudent" asp-route-id="@student.Id" class="btn btn-danger">Edit</a> 
+                    <a href="@Url.Page("/Students/DeleteStudent", new { id = student.Id })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
+<style>
+    .table-container {
+    max-height: 400px;  
+    overflow-y: auto;   
+    display: block;    
+    width: 100%;       
+}
+
+table {
+    width: 100%;     
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 10px;     
+    text-align: left;  
+    border: 1px solid #ddd; 
+}
+
+</style>

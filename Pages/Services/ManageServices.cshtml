@@ -1,0 +1,78 @@
+@page
+@model MyRazorApp.Pages.Services.ManageServicesModel
+@{
+    ViewData["Title"] = "Manage Services";
+}
+
+<h2>Manage Services</h2>
+<div class="table-container">
+<table border="1">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Service Type</th>
+            <th>Academic Year</th>
+            <th>Service Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var service in Model.Services)
+    {
+        var id = $"date_{service.Id}";
+        var buttonId = $"btn_{service.Id}";
+        <tr>
+            <td>@service.StudentName</td>
+            <td>@service.Gender</td>
+            <td>@service.Age</td>
+            <td>@service.ServiceType</td>
+            <td>@service.AcademicYear</td>
+            <td>
+                <form method="post">
+                    <input type="hidden" name="id" value="@service.Id" />
+                    <input type="date" name="date" id="@id"
+                           value="@(service.DateAdded?.ToString("yyyy-MM-dd") ?? "")"
+                           onchange="toggleSaveButton('@id', '@buttonId')" />
+                    <button type="submit" id="@buttonId" style="display:none;">Save:</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>
+
+@section Scripts {
+    <script>
+        function toggleSaveButton(dateInputId, buttonId) {
+            const dateInput = document.getElementById(dateInputId);
+            const saveButton = document.getElementById(buttonId);
+            if (dateInput && dateInput.value) {
+                saveButton.style.display = 'inline';
+            } else {
+                saveButton.style.display = 'none';
+            }
+        }
+    </script>
+}
+
+<style>
+    .table-container {
+        max-height: 400px;  
+        overflow-y: auto;   
+        display: block;    
+        width: 100%;       
+    }
+
+    table {
+        width: 100%;     
+        border-collapse: collapse; 
+    }
+
+    th, td {
+        padding: 10px;     
+        text-align: left;  
+        border: 1px solid #ddd; 
+    }
+</style>

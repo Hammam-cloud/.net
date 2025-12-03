@@ -1,0 +1,42 @@
+@page
+@model MyRazorApp.Pages.SignUpModel
+@{
+    ViewData["Title"] = "Sign Up";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/css/signin.css" />
+
+
+<form method="post">
+    <div class="form-header"></div>
+        <h2>Sign Up</h2>
+            @if (!string.IsNullOrEmpty(Model.Message))
+{
+    <p style="color:red">@Model.Message</p>
+}
+    </div>
+    <div>
+        <label asp-for="Username"></label>
+        <input asp-for="Username" />
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" type="email" />
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" />
+    </div>
+    <div>
+        <label asp-for="ConfirmPassword"></label>
+        <input asp-for="ConfirmPassword" type="password" />
+    </div>
+    <div>
+        <button type="submit">Sign Up</button>
+        
+    </div>
+
+</form>
+
+

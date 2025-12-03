@@ -1,0 +1,42 @@
+@page
+@model MyRazorApp.Pages.Services.ServiceListModel
+@{
+    Layout = "_Layout1"; 
+}
+
+<h2>Your Services</h2>
+
+@if (Model.UserServices != null && Model.UserServices.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>ServiceType</th>
+                <th>Academic Year</th>
+                <th>Service date</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var service in Model.UserServices)
+            {
+                <tr>
+                    <td>@service.StudentName</td>
+                    <td>@service.Gender</td>
+                    <td>@service.Age</td>
+                    <td>@service.ServiceType</td>
+                    <td>@service.AcademicYear</td>
+                    <td>@(service.DateAdded.HasValue ? service.DateAdded.Value.ToString("yyyy-MM-dd") : "Pending")</td>
+                  
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>You have no services listed.</p>
+}

@@ -1,0 +1,41 @@
+@page
+@model MyRazorApp.Pages.Books.AddBookModel
+@{
+    ViewData["Title"] = "Add Book";
+}
+
+<h2>Add Book</h2>
+  <form method="post">
+<div>
+    @if (!string.IsNullOrEmpty(Model.Message))
+{
+    <p style="color: green">@Model.Message</p>
+}
+  
+    <div>
+        <label asp-for="NewBook.Title"></label>
+        <input asp-for="NewBook.Title" />
+    </div>
+    <div>
+        <label asp-for="NewBook.Author"></label>
+        <input asp-for="NewBook.Author" />
+    </div>
+    <div>
+        <label asp-for="NewBook.PublishedYear"></label>
+        <input asp-for="NewBook.PublishedYear" type="number" />
+    </div>
+    <div>
+        <label asp-for="NewBook.Genre"></label>
+        <input asp-for="NewBook.Genre" />
+    </div>
+    <div></div>
+        <label asp-for="NewBook.Price"></label>
+        <input asp-for="NewBook.Price" />
+    </div>
+     <button type="submit">Add Book</button>
+   
+    
+</div>
+</form>
+
+

@@ -1,0 +1,26 @@
+@page
+@model MyRazorApp.Pages.Books.BookListModel
+@{
+    ViewData["Title"] = "Book List";
+}
+
+<h2 class="my-4">Book List</h2>
+
+<div class="row">
+    @foreach (var book in Model.Books)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">@book.Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">by @book.Author</h6>
+                    <p class="card-text">
+                        <strong>Genre:</strong> @book.Genre <br />
+                        <strong>Published:</strong> @book.PublishedYear <br />
+                        <strong>Price:</strong> $@book.Price
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>

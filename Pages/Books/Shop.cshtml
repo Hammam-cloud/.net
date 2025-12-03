@@ -1,0 +1,40 @@
+@page
+@model MyRazorApp.Pages.Books.ShopModel
+@{
+    ViewData["Title"] = "Book Shop";
+       Layout = "_Layout1";
+}
+
+<div>
+      @if (!string.IsNullOrEmpty(Model.Message))
+{
+    <p style="color: green">@Model.Message</p>
+}
+</div>
+<div class="row">
+    <h2 class="mb-4">Available Books</h2>
+
+    <div>
+  
+    @foreach (var book in Model.Books)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">@book.Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">by @book.Author</h6>
+                    <p class="card-text">
+                        Genre: @book.Genre <br />
+                        Year: @book.PublishedYear <br />
+                        Price: $@book.Price
+                    </p>
+
+                    <form method="post">
+                        <input type="hidden" name="bookId" value="@book.Id" />
+                        <button type="submit" class="btn btn-primary">Buy</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+</div>

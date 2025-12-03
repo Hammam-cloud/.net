@@ -1,0 +1,41 @@
+@page
+@model MyRazorApp.Pages.Services.AddServiceModel
+@{
+    ViewData["Title"] = "Add Service";
+    Layout = "_Layout1";
+  
+}
+
+<h2>Add Service</h2>
+
+
+<form method="post">
+    <div>
+        <label asp-for="NewService.StudentName"></label>
+        <input asp-for="NewService.StudentName" />
+    </div>
+    <div>
+        <label asp-for="NewService.Gender"></label>
+        <select asp-for="NewService.Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+             <option value="other">Other</option>
+            
+        </select>
+    </div>
+    <div>
+        <label asp-for="NewService.Age"></label>
+        <input asp-for="NewService.Age" type="number" />
+    </div>
+    <div>
+        <label asp-for="NewService.ServiceType"></label>
+        <input asp-for="NewService.ServiceType" />
+    </div>
+     <div>
+        <label asp-for="NewService.AcademicYear"></label>
+        <input asp-for="NewService.AcademicYear" />
+    </div>
+
+
+    <button type="submit">Add Service</button>
+</form>
