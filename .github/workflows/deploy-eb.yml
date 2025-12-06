@@ -49,7 +49,7 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           region: eu-north-1
           application_name: "student service"     # Must match your EB app name exactly
-          environment_id: "e-e4xyqvh2bk"
+          environment_id: "e-ip47e3qkzq"
           version_label: "v-${{ github.run_number }}"
           use_existing_version_if_available: true
           deployment_package: deploy.zip
