@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MyRazorApp.Data;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +25,7 @@ if (host == null)
 }
 
 var connectionString =
-    $"Server={host};Port={port};Database={name};User={user};Password='';";
+    $"Server={host};Port={port};Database={name};User={user};Password={pass};";
 
 // Register EF Core MySQL
 builder.Services.AddDbContext<AppDbContext>(options =>
