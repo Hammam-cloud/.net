@@ -24,7 +24,7 @@ if (host == null)
 }
 
 var connectionString =
-    $"Server={host};Port={port};Database={name};User={user};Password={pass};";
+    $"Server={host};Port={port};Database={name};User={user};Password='';";
 
 // Register EF Core MySQL
 builder.Services.AddDbContext<AppDbContext>(options =>

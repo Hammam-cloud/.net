@@ -130,3 +130,11 @@ C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Debug\net9.0\compressed\y5qnyiqosw-bt
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Debug\net9.0\compressed\mtd3vu1hqi-k1pa6yhdo9.gz
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Debug\net9.0\compressed\vm5ehv0xk4-k1pa6yhdo9.gz
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Debug\net9.0\MyRazorApp.sourcelink.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\web.config
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\appsettings.Development.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\appsettings.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\MyRazorApp.deps.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\MyRazorApp.runtimeconfig.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\MyRazorApp.staticwebassets.endpoints.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\MySqlConnector.dll
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
