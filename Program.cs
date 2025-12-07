@@ -6,9 +6,19 @@ var builder = WebApplication.CreateBuilder(args);
 // ✅ Register services BEFORE builder.Build()
 builder.Services.AddRazorPages();
 
-// ✅ Add DbContext with MySQL
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection")));
+var builder = WebApplication.CreateBuilder(args);
+
+var host = Environment.GetEnvironmentVariable("DB_HOST");
+var port = Environment.GetEnvironmentVariable("DB_PORT");
+var name = Environment.GetEnvironmentVariable("DB_NAME");
+var pass = Environment.GetEnvironmentVariable("DB_PASSWORD");
+
+var connectionString = $"Server={host};Port={port};Database={name};Uid={user};Pwd={pass};";
+
+builder.Services.AddDbContext<MyDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
+);
+
 
 // ✅ Add session-related services
 builder.Services.AddDistributedMemoryCache(); // Required for session

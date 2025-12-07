@@ -129,3 +129,4 @@ C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Debug\net9.0\compressed\soxfjfatpk-fn
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Debug\net9.0\compressed\y5qnyiqosw-btorj3ooi5.gz
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Debug\net9.0\compressed\mtd3vu1hqi-k1pa6yhdo9.gz
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Debug\net9.0\compressed\vm5ehv0xk4-k1pa6yhdo9.gz
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Debug\net9.0\MyRazorApp.sourcelink.json
