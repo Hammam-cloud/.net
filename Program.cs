@@ -1,11 +1,21 @@
 using Microsoft.EntityFrameworkCore;
 using MyRazorApp.Data;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddRazorPages()
+       .AddRazorRuntimeCompilation();  // enables runtime compilation
+
+// If you also have controllers
+builder.Services.AddControllersWithViews()
+       .AddMvcOptions(options =>
+       {
+           options.SuppressAsyncSuffixInActionNames = true;
+       })
+       .AddRazorRuntimeCompilation();
 // Razor pages
-builder.Services.AddRazorPages();
 
 // Read Elastic Beanstalk RDS environment variables
 var host = Environment.GetEnvironmentVariable("RDS_HOSTNAME");
