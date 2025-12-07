@@ -1,6 +1,12 @@
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\MyRazorApp.exe
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\publish\web.config
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\appsettings.Development.json
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\appsettings.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\publish\appsettings.Development.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\publish\appsettings.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\publish\MyRazorApp.deps.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\publish\MyRazorApp.runtimeconfig.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\publish\MyRazorApp.staticwebassets.endpoints.json
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\MyRazorApp.dll
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\MyRazorApp.deps.json
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\MyRazorApp.runtimeconfig.json
@@ -24,6 +30,8 @@ C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\Microsoft.Extensions.Options.dll
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\Microsoft.Extensions.Primitives.dll
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\MySql.Data.dll
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\MySql.EntityFrameworkCore.dll
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\MySqlConnector.dll
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\System.Configuration.ConfigurationManager.dll
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\System.Security.Cryptography.ProtectedData.dll
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\publish\System.Security.Permissions.dll

@@ -36,7 +36,7 @@ jobs:
       - name: Zip for EB
         run: |
           cd publish
-          zip -r ../deploy.zip .
+          zip -r ../deploy.zip ./*
 
       # 7️⃣ Optional: Check contents of the zip
       - name: Check deploy.zip contents

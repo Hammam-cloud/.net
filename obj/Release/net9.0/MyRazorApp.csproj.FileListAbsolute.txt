@@ -130,3 +130,11 @@ C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Release\net9.0\refint\MyRazorApp.dll
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Release\net9.0\MyRazorApp.pdb
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Release\net9.0\MyRazorApp.genruntimeconfig.cache
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\obj\Release\net9.0\ref\MyRazorApp.dll
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Release\net9.0\publish\web.config
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Release\net9.0\publish\appsettings.Development.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Release\net9.0\publish\appsettings.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Release\net9.0\publish\MyRazorApp.deps.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Release\net9.0\publish\MyRazorApp.runtimeconfig.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Release\net9.0\publish\MyRazorApp.staticwebassets.endpoints.json
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Release\net9.0\MySqlConnector.dll
+C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Release\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
