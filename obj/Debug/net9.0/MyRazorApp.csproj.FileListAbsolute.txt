@@ -1,5 +1,3 @@
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\publish\web.config
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\web.config
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\web.config
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\appsettings.json
@@ -8,16 +6,6 @@ C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\appsettings.json
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\MyRazorApp.deps.json
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\MyRazorApp.runtimeconfig.json
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\MyRazorApp.staticwebassets.endpoints.json
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\appsettings.Development.json
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\appsettings.json
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\MyRazorApp.deps.json
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\MyRazorApp.runtimeconfig.json
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\MyRazorApp.staticwebassets.endpoints.json
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\publish\appsettings.Development.json
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\publish\appsettings.json
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\publish\MyRazorApp.deps.json
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\publish\MyRazorApp.runtimeconfig.json
-C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\publish\publish\publish\MyRazorApp.staticwebassets.endpoints.json
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\MyRazorApp.staticwebassets.runtime.json
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\MyRazorApp.staticwebassets.endpoints.json
 C:\Users\WINDOWS 10\Desktop\MyRazorApp\bin\Debug\net9.0\MyRazorApp.exe

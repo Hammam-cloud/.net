@@ -24,6 +24,7 @@ var name = Environment.GetEnvironmentVariable("DB_NAME");
 var user = Environment.GetEnvironmentVariable("DB_USER");
 var pass = Environment.GetEnvironmentVariable("DB_PASSWORD");
 
+Console.WriteLine($"DB_HOST from ENV = {host}");
 
 // Local fallback for development (optional)
 if (builder.Environment.IsDevelopment())
