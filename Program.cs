@@ -44,17 +44,6 @@ else if (string.IsNullOrEmpty(host))
 var connectionString =
     $"Server={host};Port={port};Database={name};User={user};Password={pass};";
 
-try
-{
-    using var testConn = new MySqlConnector.MySqlConnection(connectionString);
-    testConn.Open();
-    Console.WriteLine("✅ Database connection successful!");
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"❌ Database connection failed: {ex.Message}");
-    throw;
-}
 // Register EF Core MySQL
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
@@ -87,6 +76,4 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-var listenPort = Environment.GetEnvironmentVariable("PORT") ?? "5000";
-app.Run($"http://0.0.0.0:{listenPort}");
-
+app.Run();
