@@ -18,14 +18,15 @@ builder.Services.AddControllersWithViews()
 // Razor pages
 
 // Read Elastic Beanstalk RDS environment variables
-var host = Environment.GetEnvironmentVariable("RDS_HOSTNAME");
-var port = Environment.GetEnvironmentVariable("RDS_PORT");
-var name = Environment.GetEnvironmentVariable("RDS_DB_NAME");
-var user = Environment.GetEnvironmentVariable("RDS_USERNAME");
-var pass = Environment.GetEnvironmentVariable("RDS_PASSWORD");
+var host = Environment.GetEnvironmentVariable("DB_HOST");
+var port = Environment.GetEnvironmentVariable("DB_PORT");
+var name = Environment.GetEnvironmentVariable("DB_NAME");
+var user = Environment.GetEnvironmentVariable("DB_USER");
+var pass = Environment.GetEnvironmentVariable("DB_PASSWORD");
+
 
 // Local fallback for development (optional)
-if (host == null)
+if (builder.Environment.IsDevelopment())
 {
     host = "localhost";
     port = "3306";
@@ -33,6 +34,11 @@ if (host == null)
     user = "root";
     pass = "";
 }
+else if (string.IsNullOrEmpty(host))
+{
+    throw new Exception("Database environment variables are missing");
+}
+
 
 var connectionString =
     $"Server={host};Port={port};Database={name};User={user};Password={pass};";
